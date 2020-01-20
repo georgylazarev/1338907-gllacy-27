@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Георгий Лазарев](https://up.htmlacademy.ru/htmlcss/27/user/1338907).
-* Наставник: [Ксения Григорьева] (https://htmlacademy.ru/profile/arctic_pie).
+* Наставник: [Ксения Григорьева](https://htmlacademy.ru/profile/arctic_pie).
 
 ---
 
