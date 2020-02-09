@@ -5,7 +5,10 @@ body {
   background-color: #849d8f;
   font-family: 'Roboto', sans-serif;
 }
-
+.gllacy-header, .gllacy-main, .gllacy-footer {
+  width: 1200px;
+  margin: 0 auto;
+}
 /* header */
 .main-menu-list {
   list-style: none;
@@ -71,4 +74,54 @@ a.active {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
+}
+
+/* main */
+.about-us {
+  /* background-image: url("../img/wafer.jpg");
+  background-repeat: no-repeat; 
+  border-radius: 15px; */
+  background-color: #ebddc0;
+}
+.about-us h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #323232;
+}
+.about-us-list {
+  list-style: none;
+}
+.about-us-list-item {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #323232;
+}
+.blog-news {
+  background-color: #ffffff;
+}
+.blog-news h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #323232;
+}
+.blog-news-p a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #323232;
+}
+.subscribe-block {
+  background-color: #f8f7f4;
+}
+.subscribe-block p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #5a5a5a;
+}
+
+/* footer */
+.papers-list-item a {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
 }
