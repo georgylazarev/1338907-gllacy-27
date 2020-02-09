@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #849d8f;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.main-menu-list {
+  list-style: none;
+}
+.main-menu-item a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+.main-menu-item a:hover {
+  background-color: #f7f6f3;
+  color: #333333;
+}
+
+.main-menu-sub-list {
+  list-style: none;
+  background-color: #f8f7f4;
+}
+.main-menu-sub-list-item a {
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #323232;
+}
+.main-menu-sub-list-item a:hover {
+  background-color: #fbded7;
+}
+.main-menu-sub-list-item a:active {
+  background-color: #f6b5a5;
+}
+.main-menu-sub-list-item:first-child a {
+  font-weight: bold;
+}
+
+a.active {
+  color: #ffffff;
+  background-color: #d07058;
+}
+
+.header-button {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header-button:hover {
+  color: #323232;
+  background-color: #ffffff;  
+}
+.not-empty {
+  color: #323232;
+  background-color: #ffffff;
+}
+.work-time {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.work-phone a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
