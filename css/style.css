@@ -174,7 +174,43 @@ a.active {
   color: #5a5a5a;
 }
 
+.breadcrumbs,
+.breadcrumbs a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.icecream-header {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.icecream-list {
+  list-style: none;
+}
+
+.icecream-caption a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.icecream-price {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
 /* footer */
+.papers-list {
+  list-style: none;
+}
+
 .papers-list-item a {
   font-size: 13px;
   font-weight: bold;
