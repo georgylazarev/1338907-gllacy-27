@@ -13,7 +13,7 @@
 
     <header class="gllacy-header">
       <div class="header-top">
-        <a><img src="img/logo.svg" class="logo" alt="Глейси"></a>
+        <a><img class="logo" src="img/logo.svg" alt="Глейси"></a>
         <nav class="main-menu">
           <ul class="main-menu-list">
             <li class="main-menu-item">
@@ -31,21 +31,21 @@
           </ul>
         </nav>
         
-        <button type="button" class="header-button">Поиск</button>
+        <button class="header-button" type="button">Поиск</button>
         <div class="visually-hidden">
           <form name="search" method="GET" action="https://echo.htmlacademy.ru">
-            <label for="search" class="visually-hidden">
+            <label class="visually-hidden" for="search">
               Поиск:
             </label>
             <input type="search" name="search" placeholder="Крем-брюле" id="search">
-            <button type="submit" class="visually-hidden">Найти</button>
+            <button class="visually-hidden" type="submit">Найти</button>
           </form>
         </div>
 
-        <button type="button" class="header-button auth-button">Вход</button>
+        <button class="header-button auth-button" type="button">Вход</button>
         <div class="visually-hidden">
           <form name="auth" method="POST" action="https://echo.htmlacademy.ru">
-            <label for="auth-email" class="visually-hidden">Email:</label>
+            <label class="visually-hidden" for="auth-email">Email:</label>
             <input type="email" name="email" placeholder="email@example.com" id="auth-email" required>
 
             <label for="auth-password" class="visually-hidden">Пароль:</label>
@@ -58,7 +58,7 @@
           </form>
         </div>
 
-        <button type="button" class="header-button basket-button">Пусто</button>
+        <button class="header-button basket-button" type="button">Пусто</button>
       </div>
 
       <div class="work-info">
@@ -96,7 +96,7 @@
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form name="subscribe" method="POST" action="https://echo.htmlacademy.ru">
-          <label for="subscribe-email" class="visually-hidden">Email:</label>
+          <label class="visually-hidden" for="subscribe-email">Email:</label>
           <input type="email" name="email" placeholder="email@example.com" id="subscribe-email" required>
           <button type="submit">Отправить</button>
         </form>
@@ -121,7 +121,7 @@
         <li class="papers-list-item"><a href="">Экологические стандарты</a></li>
       </ul>
       <div class="designed-by">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип html academy" class="htmlacademy-logo"></a><br>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="htmlacademy-logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип html academy"></a><br>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </div>
     </footer>
@@ -130,13 +130,13 @@
       <h2>Мы обязательно вам ответим!</h2>
       <button type="button">Закрыть</button>
       <form name="feedback" method="POST" action="https://echo.htmlacademy.ru">
-        <label for="feedback-name" class="visually-hidden">Имя и фамилия:</label>
+        <label class="visually-hidden" for="feedback-name">Имя и фамилия:</label>
         <input type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
         
-        <label for="feedback-email" class="visually-hidden">Email:</label>
+        <label class="visually-hidden" for="feedback-email">Email:</label>
         <input type="email" name="email" placeholder="email@example.com" id="feedback-email" required>
         
-        <label for="feedback-message" class="visually-hidden">Сообщение:</label>
+        <label class="visually-hidden" for="feedback-message">Сообщение:</label>
         <textarea name="message" rows="6" placeholder="В свободной форме" id="feedback-message" required></textarea>
         
         <button type="submit">Отправить</button>

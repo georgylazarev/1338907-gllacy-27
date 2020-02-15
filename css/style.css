@@ -1,74 +1,126 @@
+
+
+/* 
+Памятка:
+
+1. Позиционирование
+2. Блочная модель
+3. Типографика
+4. Оформление
+5. Анимация
+6. Разное 
+*/
+
 html {
   box-sizing: border-box;
 }
+
 body {
+  font-family: "Roboto", sans-serif;
+
   background-color: #849d8f;
-  font-family: 'Roboto', sans-serif;
 }
-.gllacy-header, .gllacy-main, .gllacy-footer {
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gllacy-header, 
+.gllacy-main, 
+.gllacy-footer {
   width: 1200px;
   margin: 0 auto;
 }
+
 /* header */
 .main-menu-list {
   list-style: none;
 }
+
 .main-menu-item a {
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
+
 .main-menu-item a:hover {
-  background-color: #f7f6f3;
   color: #333333;
+
+  background-color: #f7f6f3;
 }
 
 .main-menu-sub-list {
-  list-style: none;
   background-color: #f8f7f4;
+
+  list-style: none;
 }
+
 .main-menu-sub-list-item a {
   font-size: 14px;
   font-weight: normal;
-  text-decoration: none;
   color: #323232;
+  text-decoration: none;
+  
 }
+
 .main-menu-sub-list-item a:hover {
   background-color: #fbded7;
 }
+
 .main-menu-sub-list-item a:active {
   background-color: #f6b5a5;
 }
+
 .main-menu-sub-list-item:first-child a {
   font-weight: bold;
 }
 
 a.active {
   color: #ffffff;
+
   background-color: #d07058;
 }
 
 .header-button {
+  text-align: right;
   font-size: 14px;
   font-weight: 500;
-  text-align: right;
   color: #ffffff;
+
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 .header-button:hover {
   color: #323232;
+
   background-color: #ffffff;  
 }
+
 .not-empty {
   color: #323232;
+
   background-color: #ffffff;
 }
+
 .work-time {
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
 }
+
 .work-phone a {
   font-size: 22px;
   font-weight: bold;
@@ -78,40 +130,44 @@ a.active {
 
 /* main */
 .about-us {
-  /* background-image: url("../img/wafer.jpg");
-  background-repeat: no-repeat; 
-  border-radius: 15px; */
   background-color: #ebddc0;
 }
+
 .about-us h1 {
   font-size: 24px;
   font-weight: 500;
   color: #323232;
 }
+
 .about-us-list {
   list-style: none;
 }
+
 .about-us-list-item {
   font-size: 16px;
-  line-height: 1.38;
   color: #323232;
 }
+
 .blog-news {
   background-color: #ffffff;
 }
+
 .blog-news h2 {
   font-size: 16px;
   font-weight: 500;
   color: #323232;
 }
+
 .blog-news-p a {
   font-size: 24px;
   font-weight: bold;
   color: #323232;
 }
+
 .subscribe-block {
   background-color: #f8f7f4;
 }
+
 .subscribe-block p {
   font-size: 16px;
   font-weight: normal;
