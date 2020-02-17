@@ -84,7 +84,7 @@ body {
   background-color: #f6b5a5;
 }
 
-.main-menu-sub-list-item:first-child a {
+.main-menu-sub-list-item > a {
   font-weight: bold;
 }
 
