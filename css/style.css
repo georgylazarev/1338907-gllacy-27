@@ -174,6 +174,20 @@ a.active {
   color: #5a5a5a;
 }
 
+.feedback h2 {
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  color: #323232;
+}
+
+.action-button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fefefe;
+}
+
 .breadcrumbs,
 .breadcrumbs a {
   font-size: 14px;
