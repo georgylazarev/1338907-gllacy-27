@@ -217,7 +217,7 @@ a.active {
   font-weight: bold;
   line-height: 1;
   color: #ffffff;
-  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 /* footer */
