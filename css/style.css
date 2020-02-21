@@ -37,9 +37,9 @@ body {
   overflow: hidden;
 }
 
-.gllacy-header, 
-.gllacy-main, 
-.gllacy-footer {
+.header, 
+.main, 
+.footer {
   width: 1200px;
   margin: 0 auto;
 }
