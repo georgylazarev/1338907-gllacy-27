@@ -77,6 +77,20 @@ body {
 }
 
 /* header */
+.header * {
+  outline: 1px solid blue;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-top {
+  display: flex;
+  
+}
+
 .menu-list {
   list-style: none;
 }
@@ -150,11 +164,32 @@ a.active {
   background-color: #ffffff;
 }
 
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.work-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  
+}
+
 .work-time {
+  margin: 0;
+  
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
   color: #ffffff;
+  
+}
+
+.work-phone {
+  margin: 0;
 }
 
 .work-phone a {
