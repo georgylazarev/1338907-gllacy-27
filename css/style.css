@@ -56,6 +56,7 @@ body {
 .menu-item a {
   font-size: 16px;
   font-weight: bold;
+  line-height: 18px;
   color: #ffffff;
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
@@ -75,6 +76,7 @@ body {
 .menu-sub-item a {
   font-size: 14px;
   font-weight: normal;
+  line-height: 16px;
   color: #323232;
   text-decoration: none;
   
@@ -102,6 +104,7 @@ a.active {
   text-align: right;
   font-size: 14px;
   font-weight: 500;
+  line-height: 16px;
   color: #ffffff;
 
   background-color: rgba(255, 255, 255, 0.2);
@@ -122,12 +125,14 @@ a.active {
 .work-time {
   font-size: 14px;
   font-weight: bold;
+  line-height: 16px;
   color: #ffffff;
 }
 
 .work-phone a {
   font-size: 22px;
   font-weight: bold;
+  line-height: 24px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -142,6 +147,7 @@ a.active {
 .about-us h1 {
   font-size: 24px;
   font-weight: 500;
+  line-height: 30px;
   color: #323232;
 }
 
@@ -169,10 +175,19 @@ a.active {
 .news-paragraph a {
   font-size: 24px;
   font-weight: bold;
+  line-height: 30px;
   color: #323232;
 }
 
 .subscribe-block {
+  padding: 6px 5px 5px 4px;
+  
+  background-color: #f8f7f4;
+  background-image: url(../img/post.svg);
+  background-repeat: no-repeat;
+}
+
+.subscribe-content {
   background-color: #f8f7f4;
 }
 
@@ -191,12 +206,14 @@ a.active {
 .action-button {
   font-size: 18px;
   font-weight: bold;
+  line-height: 24px;
   color: #fefefe;
 }
 
 .breadcrumbs,
 .breadcrumbs a {
   font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
@@ -204,6 +221,7 @@ a.active {
 .title {
   font-size: 35px;
   font-weight: bold;
+  line-height: 41px;
   color: #ffffff;
 }
 
@@ -221,6 +239,7 @@ a.active {
 .item-price {
   font-size: 45px;
   font-weight: bold;
+  line-height: 45px;
   line-height: 1;
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
@@ -234,6 +253,7 @@ a.active {
 .papers-item a {
   font-size: 13px;
   font-weight: bold;
+  line-height: 16px;
   color: #ffffff;
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
@@ -245,6 +265,7 @@ a.active {
 
 .designed-by a {
   font-size: 12px;
+  line-height: 16px;
   color: #fefefe;
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
