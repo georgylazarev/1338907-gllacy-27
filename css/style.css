@@ -135,6 +135,8 @@ a.active {
 /* main */
 .about-us {
   background-color: #ebddc0;
+  background-image: url("../img/waffle.jpg");
+  background-repeat: no-repeat;
 }
 
 .about-us h1 {
@@ -154,6 +156,8 @@ a.active {
 
 .blog-news {
   background-color: #ffffff;
+  background-image: url(../img/strawberry.jpg);
+  background-repeat: no-repeat;
 }
 
 .blog-news h2 {
