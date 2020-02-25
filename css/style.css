@@ -100,7 +100,9 @@ body {
   font-weight: bold;
   line-height: 18px;
   color: #ffffff;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .menu-item a:hover {
@@ -130,6 +132,8 @@ body {
 
 .menu-sub-item a:active {
   background-color: #f6b5a5;
+  
+  text-decoration: none;
 }
 
 .menu-sub-item > a {
@@ -165,7 +169,6 @@ a.active {
 }
 
 .work-info {
-
   
 }
 
