@@ -164,17 +164,8 @@ a.active {
   background-color: #ffffff;
 }
 
-.header-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
 .work-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
+
   
 }
 
