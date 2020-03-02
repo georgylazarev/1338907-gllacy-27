@@ -37,7 +37,7 @@
             <label class="visually-hidden" for="search">
               Поиск:
             </label>
-            <input type="search" name="search" placeholder="Крем-брюле" id="search">
+            <input class="input-field" type="search" name="search" placeholder="Крем-брюле" id="search">
             <button class="visually-hidden">Найти</button>
           </form>
         </div>
@@ -46,10 +46,10 @@
         <div class="visually-hidden">
           <form name="auth" method="POST" action="https://echo.htmlacademy.ru">
             <label class="visually-hidden" for="auth-email">Email:</label>
-            <input type="email" name="email" placeholder="email@example.com" id="auth-email" required>
+            <input class="input-field" type="email" name="email" placeholder="email@example.com" id="auth-email" required>
 
             <label for="auth-password" class="visually-hidden">Пароль:</label>
-            <input type="password" name="password" placeholder="••••••••" id="auth-password" required>
+            <input class="input-field" type="password" name="password" placeholder="••••••••" id="auth-password" required>
             
             <button>Войти</button>
 
@@ -98,7 +98,7 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form name="subscribe" method="POST" action="https://echo.htmlacademy.ru">
             <label class="visually-hidden" for="subscribe-email">Email:</label>
-            <input type="email" name="email" placeholder="email@example.com" id="subscribe-email" required>
+            <input class="input-field" type="email" name="email" placeholder="email@example.com" id="subscribe-email" required>
             <button class="action-button">Отправить</button>
           </form>
         </div>
@@ -133,13 +133,13 @@
       <button type="button">Закрыть</button>
       <form name="feedback" method="POST" action="https://echo.htmlacademy.ru">
         <label class="visually-hidden" for="feedback-name">Имя и фамилия:</label>
-        <input type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
+        <input class="input-field" type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
         
         <label class="visually-hidden" for="feedback-email">Email:</label>
-        <input type="email" name="email" placeholder="email@example.com" id="feedback-email" required>
+        <input class="input-field" type="email" name="email" placeholder="email@example.com" id="feedback-email" required>
         
         <label class="visually-hidden" for="feedback-message">Сообщение:</label>
-        <textarea name="message" rows="6" placeholder="В свободной форме" id="feedback-message" required></textarea>
+        <textarea class="input-field" name="message" rows="6" placeholder="В свободной форме" id="feedback-message" required></textarea>
         
         <button class="action-button">Отправить</button>
       </form>
