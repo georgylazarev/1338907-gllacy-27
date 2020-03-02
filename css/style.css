@@ -143,6 +143,7 @@ body {
 a.active {
   color: #ffffff;
 
+  border: 0;
   background-color: #d07058;
 }
 
@@ -318,6 +319,7 @@ a.active {
 
 .designed-by {
   font-size: 12px;
+  line-height: 16px;
   color: #fefefe;
 }
 
