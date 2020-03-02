@@ -104,6 +104,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header-top {
@@ -189,7 +190,9 @@ a.active {
 }
 
 .work-info {
-  
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .work-time {
