@@ -53,6 +53,24 @@ body {
   box-sizing: inherit;
 }
 
+.input-field {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+  
+  border: solid 2px rgba(154, 154, 154, 0.52);
+}
+
+.input-field::placeholder {
+  font-weight: normal;
+  color: #999999;
+}
+
+.input-field:focus {
+  border: solid 2px rgba(46, 136, 228, 0.52);
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
