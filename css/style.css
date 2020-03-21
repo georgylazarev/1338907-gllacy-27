@@ -15,7 +15,7 @@
 
 .header *,
 main > * {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .catalog > * {
@@ -151,20 +151,36 @@ a.active {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-/* header */
+/* ------------------------------------- */
+/* ---------- Стили заголовка ---------- */
+/* ------------------------------------- */
 
 .header {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  margin-top: 9px;
 }
 
 .header-top {
   display: flex;
-  
+  align-items: center;
 }
 
+.link-logo {
+  line-height: 0;
+}
 .menu-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  margin-left: 27px;
+
+  width: 350px;
+
   list-style: none;
 }
 
@@ -212,20 +228,75 @@ a.active {
   font-weight: bold;
 }
 
+.header-buttons {
+  position: absolute;
+  right: 0;
+}
+
 .header-button {
+  height: 33px;
+
   text-align: right;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   color: #ffffff;
 
+  border: 0;
+  border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
 }
 
 .header-button:hover {
   color: #323232;
 
   background-color: #ffffff;  
+}
+
+.search-button {
+  width: 33px;
+
+
+}
+
+.auth-button {
+  width: 93px;
+
+  text-align: center;
+}
+
+.auth-button::before {
+  content: "";
+
+  margin-right: 7px;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/icons/entrance.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.basket-button {
+  width: 100px;
+  
+  text-align: center;
+}
+
+.basket-button::before {
+  content: "";
+
+  margin-right: 8px;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/icons/basket.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .not-empty {
@@ -236,7 +307,7 @@ a.active {
 
 .work-info {
   position: absolute;
-  bottom: 0;
+  bottom: -41px;
   right: 0;
 }
 

@@ -13,7 +13,8 @@
 
     <header class="header">
       <div class="header-top">
-        <a><img class="logo" src="img/logo.svg" alt="Глейси"></a>
+        <a class="link-logo"><img class="logo" src="img/logo.svg" alt="Глейси"></a>
+
         <nav class="main-menu">
           <ul class="menu-list">
             <li class="menu-item">
@@ -31,40 +32,43 @@
           </ul>
         </nav>
         
-        <button class="header-button" type="button">Поиск</button>
-        <div class="visually-hidden">
-          <form name="search" method="GET" action="https://echo.htmlacademy.ru">
-            <label class="visually-hidden" for="search">
-              Поиск:
-            </label>
-            <input class="input-field" type="search" name="search" placeholder="Крем-брюле" id="search">
-            <button class="visually-hidden">Найти</button>
-          </form>
+        <div class="header-buttons">
+          <button class="header-button search-button" type="button">Поиск</button>
+          <div class="visually-hidden">
+            <form name="search" method="GET" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="search">
+                Поиск:
+              </label>
+              <input class="input-field" type="search" name="search" placeholder="Крем-брюле" id="search">
+              <button class="visually-hidden">Найти</button>
+            </form>
+          </div>
+
+          <button class="header-button auth-button" type="button">Вход</button>
+
+          <div class="visually-hidden">
+            <form name="auth" method="POST" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="auth-email">Email:</label>
+              <input class="input-field" type="email" name="email" placeholder="email@example.com" id="auth-email" required>
+
+              <label for="auth-password" class="visually-hidden">Пароль:</label>
+              <input class="input-field" type="password" name="password" placeholder="••••••••" id="auth-password" required>
+              
+              <button>Войти</button>
+
+              <a class="link-black" href="">Забыли пароль?</a>
+              <a class="link-black" href="">Новая регистрация</a>
+            </form>
+          </div>
+
+          <button class="header-button basket-button" type="button">Пусто</button>
         </div>
-
-        <button class="header-button auth-button" type="button">Вход</button>
-        <div class="visually-hidden">
-          <form name="auth" method="POST" action="https://echo.htmlacademy.ru">
-            <label class="visually-hidden" for="auth-email">Email:</label>
-            <input class="input-field" type="email" name="email" placeholder="email@example.com" id="auth-email" required>
-
-            <label for="auth-password" class="visually-hidden">Пароль:</label>
-            <input class="input-field" type="password" name="password" placeholder="••••••••" id="auth-password" required>
-            
-            <button>Войти</button>
-
-            <a class="link-black" href="">Забыли пароль?</a>
-            <a class="link-black" href="">Новая регистрация</a>
-          </form>
-        </div>
-
-        <button class="header-button basket-button" type="button">Пусто</button>
       </div>
       
-        <div class="work-info">
-          <p class="work-time">С 10 до 20, ежедневно</p>
-          <p class="work-phone"><a href="tel:88124502525">8 812 450-25-25</a></p>
-        </div>
+      <div class="work-info">
+        <p class="work-time">С 10 до 20, ежедневно</p>
+        <p class="work-phone"><a href="tel:88124502525">8 812 450-25-25</a></p>
+      </div>
     </header>
 
     <main class="main">
