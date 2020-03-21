@@ -219,13 +219,16 @@ a.active {
 }
 
 /* main */
+.slideshow {
+
+}
 
 .short-banners {
+  position: relative;
   display: flex;
   justify-content: space-between;
 
-  padding: 0 27px;
-
+  margin: 0 27px;
   margin-top: 647px;
 }
 
@@ -234,6 +237,7 @@ a.active {
   width: 560px;
   height: 229px;
 
+  color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -248,8 +252,9 @@ a.active {
 }
 
 .goods-offer {
+  margin: 0 27px;
   margin-top: 40px;
-  padding: 0 27px;
+  
 }
 
 .goods-offer ul {
@@ -317,26 +322,20 @@ a.active {
   color: #ffffff;
 }
 
-/* .catalog-list {
-  list-style: none;
-  padding: 0;
-}
-
-.item-caption a {
-  font-weight: 500;
-  color: #ffffff;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
-}
-
- */
-
 .about-us {
+  margin: 0 27px;
+  margin-top: 41px;
+  padding: 26px 20px;
+
+  border-radius: 15px;
   background-color: #ebddc0;
   background-image: url("../img/waffle.jpg");
   background-repeat: no-repeat;
 }
 
 .about-us h1 {
+  margin: 0;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -344,14 +343,25 @@ a.active {
 }
 
 .about-list {
+  margin: 0;
   list-style: none;
 }
 
 .about-item {
   color: #323232;
 }
+.blocks {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 27px;
+  margin-top: 40px;
+}
 
 .blog-news {
+  width: 560px;
+
+  border-radius: 15px;
   background-color: #ffffff;
   background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
@@ -374,18 +384,23 @@ a.active {
 }
 
 .subscribe-block {
-  padding: 6px 5px 5px 4px;
+  width: 560px;
+  padding: 5px;
 
+  border-radius: 15px;
   background-color: #f8f7f4;
   background-image: url(../img/post.svg);
   background-repeat: no-repeat;
 }
 
 .subscribe-content {
+  border-radius: 15px;
   background-color: #f8f7f4;
+  height: 100%;
 }
 
 .subscribe-block p {
+  margin: 0;
   font-weight: normal;
   color: #5a5a5a;
 }
@@ -394,6 +409,18 @@ a.active {
   font-size: 24px;
   font-weight: 500;
   color: #323232;
+}
+
+.contacts {
+  margin-top: 40px;
+
+  width: 1200px;
+  height: 430px
+  ;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .action-button {
@@ -433,6 +460,14 @@ a.active {
 }
 
 /* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 27px;
+  padding-top: 18px;
+}
+
 .papers-list {
   list-style: none;
 }
