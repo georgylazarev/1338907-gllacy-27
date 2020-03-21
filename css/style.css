@@ -179,18 +179,26 @@ a.active {
   padding: 0;
   margin-left: 27px;
 
-  width: 350px;
+  /* width: 350px; */
 
   list-style: none;
 }
 
+.menu-item {
+  /* padding: 8px 14px; */
+}
+
 .menu-item a {
+  display: block;
+  padding: 0 14px;
+
+  height: 32px;
+
   font-weight: bold;
-  line-height: 18px;
   color: #ffffff;
   text-decoration: none;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
 }
 
 .menu-item a:hover {
@@ -199,19 +207,45 @@ a.active {
   background-color: #f7f6f3;
 }
 
+.menu-link {
+  line-height: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a.active .menu-link,
+.menu-item a:hover .menu-link {
+  border-bottom: 0;
+}
+
 .menu-sub-list {
+  display: none;
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+
+  width: 143px;
+
   background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
   list-style: none;
+  overflow: hidden;
+}
+
+.menu-item a:hover + .menu-sub-list,
+.menu-sub-list:hover {
+  display: block;
 }
 
 .menu-sub-item a {
   font-size: 14px;
   font-weight: normal;
-  line-height: 16px;
+  line-height: 28px;
   color: #323232;
   text-decoration: none;
-  
+  border-radius: 0;
 }
 
 .menu-sub-item a:hover {
@@ -224,19 +258,40 @@ a.active {
   text-decoration: none;
 }
 
-.menu-sub-item > a {
+.menu-sub-item:first-child a {
   font-weight: bold;
 }
 
+.menu-sub-item:first-child::after {
+  display: block;
+  content: "";
+
+  margin-left: 6px;
+  
+  width: 128px;
+  
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
   position: absolute;
   right: 0;
+
+  width: 246px;
 }
 
 .header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 33px;
 
-  text-align: right;
+  /* text-align: right; */
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -258,7 +313,13 @@ a.active {
 .search-button {
   width: 33px;
 
+  background-image: url("../img/icons/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.search-button:hover {
+  background-image: url("../img/icons/loupe-black.svg");
 }
 
 .auth-button {
@@ -268,6 +329,7 @@ a.active {
 }
 
 .auth-button::before {
+  display: inline-block;
   content: "";
 
   margin-right: 7px;
@@ -275,9 +337,73 @@ a.active {
   width: 21px;
   height: 21px;
 
-  background-image: url("../img/icons/entrance.svg");
+  color: #ffffff;
+  background-image: url("../img/icons/entrance-white.svg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
+}
+
+.auth-button:hover::before {
+  background-image: url("../img/icons/entrance.svg");
+}
+
+.auth-block {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 109px;
+  
+
+  padding-left: 19px;
+  padding-top: 20px;
+  padding-right: 17px;
+  padding-bottom: 22px;
+  
+  width: 277px;
+  height: 214px;
+
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  overflow: hidden;
+
+  z-index: 1;
+}
+
+.auth-email,
+.auth-password {
+  margin-bottom: 20px;
+  padding-left: 14px;
+
+  width: 241px;
+  height: 44px;
+
+  border-radius: 5px;
+  border: solid 1px #d3d3d2;
+  background-color: #ffffff;
+
+}
+
+.auth-block-button {
+  float: left;
+
+  width: 100px;
+  height: 44px;
+
+  border-radius: 22px;
+}
+
+.auth-block-link {
+  margin: 0;
+  margin-bottom: 8px;
+  margin-left: 20px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+.auth-block:hover,
+.auth-button:hover + .auth-block {
+  display: block;
 }
 
 .basket-button {
@@ -287,6 +413,7 @@ a.active {
 }
 
 .basket-button::before {
+  display: inline-block;
   content: "";
 
   margin-right: 8px;
@@ -297,6 +424,10 @@ a.active {
   background-image: url("../img/icons/basket.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.basket-button:hover::before {
+  background-image: url("../img/icons/basket-black.svg");
 }
 
 .not-empty {
