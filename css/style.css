@@ -95,11 +95,12 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-
-/* header */
-.header * {
+.header *,
+main > * {
   outline: 1px solid blue;
 }
+/* header */
+
 
 .header {
   display: flex;
@@ -218,6 +219,117 @@ a.active {
 }
 
 /* main */
+
+.short-banners {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 27px;
+
+  margin-top: 647px;
+}
+
+.raspberry-banner,
+.chocolate-banner {
+  width: 560px;
+  height: 229px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 15px;
+}
+.raspberry-banner {
+  background-image: url("../img/raspberry.jpg");
+}
+
+.chocolate-banner {
+  background-image: url("../img/chocolate-powder.jpg");
+}
+
+.goods-offer {
+  margin-top: 40px;
+  padding: 0 27px;
+}
+
+.goods-offer ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+  list-style: none;
+  
+}
+
+.catalog-position {
+  margin: 0;
+
+}
+
+.catalog-item {
+  position: relative;
+
+  margin: 0;
+  
+  width: 267px;
+}
+
+.hit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/icons/hit.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.catalog-item img {
+  border-radius: 50%;
+}
+
+.item-caption {
+  text-align: center;
+}
+
+.item-price {
+  position: absolute;
+  top: 214px;
+  left: 0;
+
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.item-price span {
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+/* .catalog-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item-caption a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+ */
+
 .about-us {
   background-color: #ebddc0;
   background-image: url("../img/waffle.jpg");
@@ -320,32 +432,6 @@ a.active {
   color: #ffffff;
 }
 
-.catalog-list {
-  list-style: none;
-}
-
-.item-caption a {
-  font-weight: 500;
-  color: #ffffff;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
-}
-
-.item-price {
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 45px;
-  line-height: 1;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
-}
-
-.item-price span {
-  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 45px;
-  color: #ffffff;
-}
 /* footer */
 .papers-list {
   list-style: none;
