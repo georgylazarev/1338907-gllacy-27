@@ -97,7 +97,7 @@ body {
 }
 .header *,
 main > * {
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 /* header */
 
@@ -425,6 +425,27 @@ a.active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.catalog > * {
+  /* outline: 1px solid red; */
+}
+
+.paginator {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  width: 190px;
 }
 
 .action-button {
