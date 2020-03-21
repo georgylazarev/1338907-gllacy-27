@@ -221,6 +221,8 @@ a.active .menu-link,
   display: none;
   position: absolute;
 
+  top: 51px;
+
   margin: 0;
   padding: 0;
 
@@ -275,13 +277,13 @@ a.active .menu-link,
 
 .header-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   
   position: absolute;
   right: 0;
 
-  width: 246px;
+  width: 262px;
 }
 
 .header-button {
@@ -289,9 +291,10 @@ a.active .menu-link,
   justify-content: center;
   align-items: center;
 
-  height: 33px;
+  margin-left: 8px;
 
-  /* text-align: right; */
+  height: 33px;
+  
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -322,6 +325,41 @@ a.active .menu-link,
   background-image: url("../img/icons/loupe-black.svg");
 }
 
+.search-block {
+  display: none;
+  position: absolute;
+  top: 36px;
+  right: 206px;
+
+  padding: 20px 15px;
+
+  width: 341px;
+  height: 84px;
+
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+
+  z-index: 1;
+}
+
+.search-block:hover,
+.search-button:hover + .search-block {
+  display: block;
+}
+
+.search-field {
+  margin-bottom: 20px;
+  padding-left: 14px;
+
+  width: 311px;
+  height: 44px;
+
+  border-radius: 5px;
+  border: solid 1px #d3d3d2;
+  background-color: #ffffff;
+}
+
 .auth-button {
   width: 93px;
 
@@ -350,7 +388,7 @@ a.active .menu-link,
 .auth-block {
   display: none;
   position: absolute;
-  top: 35px;
+  top: 36px;
   right: 109px;
   
 
@@ -431,9 +469,26 @@ a.active .menu-link,
 }
 
 .not-empty {
+  width: 117px;
+
   color: #323232;
 
   background-color: #ffffff;
+}
+
+.not-empty:hover::before,
+.not-empty::before {
+  display: inline-block;
+  content: "";
+
+  margin-right: 8px;
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/icons/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .work-info {
