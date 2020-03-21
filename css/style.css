@@ -11,6 +11,21 @@
 6. Разное 
 */
 
+/* ---------- Вспомогательные элементы ---------- */
+
+.header *,
+main > * {
+  outline: 1px solid blue;
+}
+
+.catalog > * {
+  outline: 1px solid red;
+}
+
+/* -------------------------------------------------- */
+/* ---------- Общие стили по всему проекту ---------- */
+/* -------------------------------------------------- */
+
 html {
   box-sizing: border-box;
 }
@@ -95,12 +110,48 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.header *,
-main > * {
-  outline: 1px solid blue;
-}
-/* header */
 
+a.active {
+  color: #ffffff;
+
+  border: 0;
+  background-color: #d07058;
+}
+
+.link-button,
+.action-button {
+  display: inline-block;
+  
+  font-weight: 600;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+}
+
+.link-button:hover,
+.action-button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+  }
+
+.link-button:active,
+.action-button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+/* header */
 
 .header {
   display: flex;
@@ -161,13 +212,6 @@ main > * {
   font-weight: bold;
 }
 
-a.active {
-  color: #ffffff;
-
-  border: 0;
-  background-color: #d07058;
-}
-
 .header-button {
   text-align: right;
   font-size: 14px;
@@ -218,7 +262,10 @@ a.active {
   text-decoration: none;
 }
 
-/* main */
+/* -------------------------------------------- */
+/* ---------- Стили главной страницы ---------- */
+/* -------------------------------------------- */
+
 .slideshow {
   position: absolute;
   top: 0;
@@ -456,14 +503,15 @@ a.active {
   background-position: center;
 }
 
+/* ------------------------------------ */
+/* ---------- Стили каталога ---------- */
+/* ------------------------------------ */
+
+
 .catalog {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-
-.catalog > * {
-  /* outline: 1px solid red; */
 }
 
 .paginator {
@@ -486,38 +534,7 @@ a.active {
   border-radius: 50px;
 }
 
-.link-button,
-.action-button {
-  display: inline-block;
-  
-  font-weight: 600;
 
-  text-align: center;
-  color: #ffffff;
-  vertical-align: top;
-  text-decoration: none;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-  background: #f26843;
-  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  border: none;
-
-  cursor: pointer;
-}
-
-.link-button:hover,
-.action-button:hover {
-  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-  }
-
-.link-button:active,
-.action-button:active {
-  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
 
 .breadcrumbs {
   font-size: 14px;
@@ -532,7 +549,10 @@ a.active {
   color: #ffffff;
 }
 
-/* footer */
+/* ----------------------------------- */
+/* ---------- Стили подвала ---------- */
+/* ----------------------------------- */
+
 footer {
   display: flex;
   justify-content: space-between;
