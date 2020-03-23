@@ -201,21 +201,23 @@
       </div>
     </footer>
 
-    <div class="feedback">
-      <h2>Мы обязательно вам ответим!</h2>
-      <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
-      <form name="feedback" method="POST" action="https://echo.htmlacademy.ru">
-        <label class="visually-hidden" for="feedback-name">Имя и фамилия:</label>
-        <input class="input-field feedback-text" type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
-        
-        <label class="visually-hidden" for="feedback-email">Email:</label>
-        <input class="input-field feedback-text" type="email" name="email" placeholder="email@example.com" id="feedback-email" required>
-        
-        <label class="visually-hidden" for="feedback-message">Сообщение:</label>
-        <textarea class="input-field feedback-textarea" name="message" rows="6" placeholder="В свободной форме" id="feedback-message" required></textarea>
-        
-        <button class="action-button feedback-send">Отправить</button>
-      </form>
+    <div class="feedback-wrapper">
+      <div class="feedback">
+        <h2>Мы обязательно вам ответим!</h2>
+        <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <form name="feedback" method="POST" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="feedback-name">Имя и фамилия:</label>
+          <input class="input-field feedback-text" type="text" name="name" placeholder="Имя Фамилия" id="feedback-name" required>
+          
+          <label class="visually-hidden" for="feedback-email">Email:</label>
+          <input class="input-field feedback-text" type="email" name="email" placeholder="email@example.com" id="feedback-email" required>
+          
+          <label class="visually-hidden" for="feedback-message">Сообщение:</label>
+          <textarea class="input-field feedback-textarea" name="message" rows="6" placeholder="В свободной форме" id="feedback-message" required></textarea>
+          
+          <button class="action-button feedback-send">Отправить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

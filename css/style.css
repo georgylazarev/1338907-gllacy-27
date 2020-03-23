@@ -831,12 +831,6 @@ a.active .menu-link,
   color: #5a5a5a;
 }
 
-.feedback h2 {
-  font-size: 24px;
-  font-weight: 500;
-  color: #323232;
-}
-
 .contacts {
   margin-top: 40px;
 
@@ -849,10 +843,21 @@ a.active .menu-link,
   background-position: center;
 }
 
+.feedback-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+
 .feedback {
-  position: absolute;
-  top: 337px;
-  left: 381px;
+  position: relative;
 
   padding-top: 20px;
   padding-left: 24px;
@@ -920,7 +925,7 @@ a.active .menu-link,
   position: absolute;
   bottom: 27px;
   right: 25px;
-  
+
   width: 139px;
   height: 44px;
 
