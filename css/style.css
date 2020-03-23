@@ -19,7 +19,7 @@ main > * {
 }
 
 .catalog > * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* -------------------------------------------------- */
@@ -490,6 +490,94 @@ a.active .menu-link,
   background-image: url("../img/icons/basket-red.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.basket-block {
+  display: none;
+  
+  position: absolute;
+  top: 36px;
+  
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 14px;
+  
+  width: 539px;
+  height: 242px;
+  
+  text-align: right;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  
+  z-index: 1;
+}
+
+.basket-block:hover,
+.basket-button:hover + .basket-block {
+  display: block;
+}
+
+.basket-block table {
+  border-spacing: 0 10px;
+  text-align: left;
+}
+
+.basket-block td {
+    padding-right: 15px;
+}
+
+.basket-block tr td:nth-child(3) {
+  width: 235px;
+}
+
+.basket-del {
+  width: 11px;
+  height: 11px;
+  
+  border: 0;
+  background: none;
+  
+  background-image: url("../img/icons/cross-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  cursor: pointer;
+}
+
+.basket-block tbody td {
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.basket-image {
+  border-radius: 50%;
+}
+
+.basket-block .price {
+  color: #999999;
+}
+
+.basket-block tfoot {
+  font-weight: bold;
+  
+}
+
+.basket-block th {
+  padding-top: 17px;
+  text-align: right;
+  
+  border-top: 1px solid #cacac7;
+}
+
+.basket-block-button {
+  width: 170px;
+  height: 44px;
+  
+  line-height: 44px;
+  
+  border-radius: 22px;
 }
 
 .work-info {

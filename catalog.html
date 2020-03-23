@@ -65,30 +65,31 @@
 
           <button class="header-button basket-button not-empty" type="button">2 товара</button>
 
-          <div class="visually-hidden">
+          <div class="basket-block">
               <table>
                 <tbody>
                   <tr>
-                    <td><button type="button">Удалить</button></td>
+                    <td><button class="basket-del" type="button"><span class="visually-hidden">Удалить</span></button></td>
+                    <td><img class="basket-image" src="./img/icecreams/1.jpg" width="33" height="33"></td>
                     <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг х 200 руб.</td>
+                    <td>1,5 кг х <span class="price">200 руб.</span></td>
                     <td>300 руб.</td>
                   </tr>
                   <tr>
-                    <td><button type="button">Удалить</button></td>
+                    <td><button class="basket-del" type="button"><span class="visually-hidden">Удалить</span></button></td>
+                    <td><img class="basket-image" src="./img/icecreams/3.jpg" width="33" height="33"></td>
                     <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг х 300 руб.</td>
+                    <td>1,5 кг х <span class="price">300 руб.</span></td>
                     <td>450 руб.</td>
                   </tr>
                 </tbody>
                 <tfoot>
                   <tr>
-                    <th scope="row" colspan="3">Итого:</th>
-                    <td>750 руб.</td>
+                    <th scope="row" colspan="5">Итого: 750 руб.</th>
                   </tr>
                 </tfoot>
               </table>
-              <a href="">Оформить заказ</a>
+              <a class="action-button basket-block-button" href="">Оформить заказ</a>
           </div>
         </div>
 
