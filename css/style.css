@@ -179,13 +179,7 @@ a.active {
   padding: 0;
   margin-left: 27px;
 
-  /* width: 350px; */
-
   list-style: none;
-}
-
-.menu-item {
-  /* padding: 8px 14px; */
 }
 
 .menu-item a {
@@ -987,9 +981,11 @@ a.active .menu-link,
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding: 0 27px;
   padding-top: 18px;
+  padding-bottom: 26px;
 }
 
 .social-links a {
@@ -1022,14 +1018,43 @@ footer {
 }
 
 .papers-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  width: 327px;
   list-style: none;
+}
+
+.papers-item {
+  width: 50%;
 }
 
 .papers-item a {
   font-size: 13px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 16px;
+}
 
+.papers-item:first-child a {
+  font-weight: bold;
+}
+.papers-item:first-child {
+  margin-left: -22px;
+}
+.papers-item:first-child::before {
+  content: "";
+  display: inline-block;
+
+  margin-right: 7px;
+  width: 15px;
+  height: 13px;
+
+  background-image: url("../img/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .designed-by {
